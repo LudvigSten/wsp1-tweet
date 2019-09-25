@@ -10,7 +10,7 @@ $tweetId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 include 'include/dbinfo.php';
 try {
     $dbh = new PDO(
-        'mysql:host=localhost;dbname=' . $database . '',
+        'mysql:host=localhost;charset=utf8mb4;dbname=' . $database . '',
          $user,
           $password
     );
